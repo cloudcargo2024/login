@@ -65,9 +65,8 @@
     transition: max-height 0.2s ease-out;
   }
 
-.img {
+body {
     background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100% 100%;
 }
