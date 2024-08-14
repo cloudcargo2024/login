@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            CloudCargo
-        </title>
-        <style>
-            <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
-        </style>
-    </head>
-    <body>
-        <link rel="stylesheet" href="design.css">
-        <h2>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCargo</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <h2>
         <button class="btn">
             <span class="icon">
                 <svg viewBox="0 0 175 80" width="40" height="40">
@@ -21,21 +20,22 @@
             </span>
             <span class="text">CloudCargo</span>                
         </button>
-        <div class="panel">
-            <p>-</p>
-            <p><a href="https://cloudcargo2024.github.io/web/">Main page</a></p>
-            <p><a href="https://cloudcargo2024.github.io/login/">Login</a></p>
-            <p><a href="https://cloudcargo2024.github.io/products/">Products</a></p>
-            <p><a href="https://cloudcargo2024.github.io/sponsors/">Sponsors</a></p>
-            <p><a href="https://cloudcargo2024.github.io/contactus/">Contact us</a></p>
-        </div>
+    </h2>
+    <div class="panel">
+        <p>-</p>
+        <p><a href="https://cloudcargo2024.github.io/web/">Main page</a></p>
+        <p><a href="https://cloudcargo2024.github.io/login/">Login</a></p>
+        <p><a href="https://cloudcargo2024.github.io/products/">Products</a></p>
+        <p><a href="https://cloudcargo2024.github.io/sponsors/">Sponsors</a></p>
+        <p><a href="https://cloudcargo2024.github.io/contactus/">Contact us</a></p>
+    </div>
 
-        <script>
-            var acc = document.getElementsByClassName("btn");
-            var i;
+    <script>
+        var acc = document.getElementsByClassName("btn");
+        var i;
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
@@ -43,11 +43,11 @@
                 } else {
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 } 
-                });
-            }
-        </script>
-        </h2>
-        <div style="background: url('munte.jpg') no-repeat center center / 100% 100%; width: 200vw; height: 200vh;"></div>
-        <h1><br>login</br></h1>
-    </body>
+            });
+        }
+    </script>
+
+    <div style="background: url('munte.jpg') no-repeat center center / cover; width: 100vw; height: 100vh;"></div>
+    <h1>login</h1>
+</body>
 </html>
