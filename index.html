@@ -30,20 +30,17 @@
     </div>
 
     <script>
-        var acc = document.getElementsByClassName("btn");
-        var i;
+        var btn = document.querySelector('.btn');
+        var panel = document.querySelector('.panel');
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-            });
-        }
+        btn.addEventListener('click', function() {
+            this.classList.toggle("active");
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
     </script>
 
     <div style="width: 100vw; height: 100vh;"></div>
