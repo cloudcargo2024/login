@@ -66,5 +66,8 @@
   }
 
 .body {
-  background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
+    background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
